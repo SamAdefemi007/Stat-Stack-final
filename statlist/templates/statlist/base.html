@@ -14,12 +14,12 @@
 <body>
     {% block navbar %}
     <nav>
-        <a href="{% url 'statlist:home' %}"><img id="logo" src="{% static 'images/statslogo.png' %}" alt=""></a>
+        <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/statslogo.png' %}" alt=""></a>
         <ul>
-            <a href="{% url 'statlist:profile' %}"><li><i class="fas fa-user"></i>Player Profile</li></a>
-            <a href="{% url 'statlist:compare' %}"><li><i class="fas fa-not-equal"></i></i>Compare Players</li></a>
-            <a href="{% url 'statlist:country' %}"><li><i class="fas fa-globe"></i>National Team</li></a>
-            <a href="{% url 'statlist:club' %}"><li><i class="fas fa-futbol"></i>Football Clubs</li></a>
+            <a href="{% url 'profile' %}"><li><i class="fas fa-user"></i>Player Profile</li></a>
+            <a href="{% url 'compare' %}"><li><i class="fas fa-not-equal"></i></i>Compare Players</li></a>
+            <a href="{% url 'country' %}"><li><i class="fas fa-globe"></i>National Team</li></a>
+            <a href="{% url 'club' %}"><li><i class="fas fa-futbol"></i>Football Clubs</li></a>
         </ul>
         
     </nav>
