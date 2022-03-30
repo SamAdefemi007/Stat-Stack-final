@@ -2,9 +2,11 @@
 {% load static %}
 
 {% block content %}
+
 <div class="top-default">
     <div class="main-default">
         {% if player1 and player2 %}
+    
         <div id="player1" class="default-div">
             <img src="{{player1.playerPhoto}}" alt="">
             <p><span class="field-name">Name:</span> <span class="field-value">{{player1.playerName}}</span></p>
@@ -72,6 +74,7 @@
 
 
 
+
 {% else %}
 
 <div class="else-default">
@@ -118,6 +121,8 @@
 </div>
 
 {% endif%}
+
 {% block footer %}
 {% endblock %}
+
 {% endblock %}
