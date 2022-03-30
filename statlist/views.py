@@ -53,4 +53,11 @@ def compare(request):
     return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
 
 def details(request, id):
+    try:
+        playerobj = Player.objects.all().filter(
+            playerID=id).order_by("-skills__rating").first()
+    except ObjectDoesNotExist:
+        print("the Player object does not exist or could not be fetched from the database")
+    except MultipleObjectsReturned:
+        print("The query returned more than one object, possible duplication of countryname or wrong queryset")
     return render(request, 'statlist/playerdetail.html', {'player': playerobj})
