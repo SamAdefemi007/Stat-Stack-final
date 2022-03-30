@@ -14,3 +14,13 @@ class Country(models.Model):
 
     class Meta:
         ordering = ('countryName',)
+
+
+
+class Club(models.Model):
+    clubID = models.AutoField(primary_key=True)
+    clubName = models.CharField(max_length=200)
+    clubLogo = models.URLField(max_length=1000)
+
+    def __str__(self):
+        return f"{self.clubName}"
