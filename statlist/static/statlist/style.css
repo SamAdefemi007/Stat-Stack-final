@@ -14,7 +14,6 @@ body {
   font-family: inter, sans-serif;
   margin: 0;
 }
-
 nav {
   display: flex;
   margin-top: 0;
@@ -196,4 +195,254 @@ nav ul li a {
   padding: 10px;
   border-radius: 10px;
   text-decoration: none;
+}
+form {
+  margin-bottom: 20px;
+}
+
+.squad {
+  background-image: url("../images/squad.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  color: #e9cc74;
+  margin-left: 100px;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  height: 70%;
+}
+
+.formation > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/bg.jpeg");
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-img {
+  border-bottom: 1px solid salmon;
+  width: 100%;
+}
+.profile-img > img {
+  width: 200px;
+  margin-left: 40%;
+}
+
+.details-card div {
+  margin-right: 100px;
+}
+
+.field-name {
+  font-size: larger;
+  font-family: inter, sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.field-value {
+  color: blue;
+  font-weight: 700;
+}
+
+.country-info {
+  font-size: xx-large;
+  font-weight: 700;
+  color: darkcyan;
+}
+
+.info-text {
+  text-align: center;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.info-text > p {
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+#home-btn button {
+  width: 250px;
+  height: 70px;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  background-color: #e9cc74;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#home-btn button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateX(7px);
+}
+
+#player-link {
+  text-decoration: none;
+}
+
+form > select {
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.head-c {
+  margin-left: 30px;
+}
+
+form > input {
+  border-radius: 10px;
+  padding: 6px;
+  font-size: large;
+}
+
+form > input:hover {
+  background-color: #e9cc74;
+}
+
+thead {
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+tbody {
+  background-color: whitesmoke;
+}
+tbody > tr > td {
+  padding: 5px;
+  font-size: medium;
+}
+th {
+  text-align: left;
+}
+
+footer {
+  background-color: aliceblue;
+  border: 1px solid burlywood;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
+
+.main-default {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.default-div {
+  width: 20%;
+  border-radius: 30px;
+}
+
+.default-div > img {
+  max-width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+
+.compare-btn > button {
+  font-size: xx-large;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.form-div > select {
+  width: 300px;
+  height: 30px;
+}
+
+.select-input {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.checkothers {
+  margin: auto;
+}
+.checkothers > a > button {
+  font-size: x-large;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 30px 20px;
+}
+
+.checkothers > a > button:hover {
+  background-color: gold;
+}
+.top-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.else-default {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-select {
+  margin-left: 100px;
+}
+
+#div-2 {
+  margin-left: 220px;
+}
+
+#player2 {
+  margin-left: 70px;
+  border: 2px solid sandybrown;
+  padding-left: 80px;
+}
+
+#player1 {
+  border: 2px solid sandybrown;
+  padding-left: 40px;
+}
+
+#message {
+  background-color: lightcoral;
+  padding: 10px;
 }
