@@ -51,3 +51,6 @@ def compare(request):
             player1object = Player.objects.get(playerName=player1)
             player2object = Player.objects.get(playerName=player2)
     return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
+
+def details(request, id):
+    return render(request, 'statlist/playerdetail.html', {'player': playerobj})
