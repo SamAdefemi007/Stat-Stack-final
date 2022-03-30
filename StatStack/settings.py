@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9f0%(0b4gxju!wean1#q#$q3s6_i^qwct5o&-09fy@23%o-r(n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['nevadapogo-golfflash-8000.codio-box.uk', 'exitalbum-madonnatape-3000.codio-box.uk', 'shelfromeo-sparkmoment-3000.codio-box.uk']
+ALLOWED_HOSTS = ['nevadapogo-golfflash-8000.codio-box.uk','stat-stack.herokuapp.com']
 
 
 # Application definition
