@@ -19,3 +19,11 @@ class TestUrls(SimpleTestCase):
     def test_country_url_resolves(self):
         url = reverse('country')
         self.assertEqual(resolve(url).func, country)
+
+
+class TestOtherUrls(TestCase):
+
+    def test_details_url_resolves(self):
+        client = Client()
+        response = client.get('/')
+        self.assertEqual(response.status_code, 200)
