@@ -30,3 +30,8 @@ def club(request):
                 playerClub__clubName=clubname).order_by("-skills__rating")
 
     return render(request, 'statlist/club.html', {'clubs': sorted(clubObj), 'players': playerobj, 'clubname': clubname, 'clublogo': clublogo})
+
+
+def compare(request):
+        
+        return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
