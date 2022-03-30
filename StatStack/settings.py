@@ -57,7 +57,7 @@ ROOT_URLCONF = 'StatStack.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/templates/statlist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
