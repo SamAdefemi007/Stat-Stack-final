@@ -33,22 +33,21 @@ def club(request):
 
 
 def compare(request):
-        try:
-            playerObj = Player.objects.all().values_list(
-            "playerName", flat=True).distinct()
-        except ObjectDoesNotExist:
-            print("the club object does not exist or could not be fetched from the database")
+    try:
+        playerObj = Player.objects.all().values_list("playerName", flat=True).distinct()
+    except ObjectDoesNotExist:
+        print("the club object does not exist or could not be fetched from the database")
         
-        player1object = None
-        player2object = None
+    player1object = None
+    player2object = None
 
-        player1 = request.GET.get("player1")
-        player2 = request.GET.get("player2")
+    player1 = request.GET.get("player1")
+    player2 = request.GET.get("player2")
 
-        if player1 != None:
-            if player1 == player2:
-                messages.add_message(request, messages.INFO, f"Warning: We are unable to compare the same player \"{player1}\",  Please Select different players and try again!")
+    if player1 != None:
+        if player1 == player2:
+            messages.add_message(request, messages.INFO, f"Warning: We are unable to compare the same player \"{player1}\",  Please Select different players and try again!")
         else:
             player1object = Player.objects.get(playerName=player1)
             player2object = Player.objects.get(playerName=player2)
-        return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
+    return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
