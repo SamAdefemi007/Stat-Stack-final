@@ -19,18 +19,18 @@
     <div>
         <p class="country-info">{{clubname}} <img src="{{clublogo}}" alt=""></p>
         <table>
-            <tr>
-                <th>Player Name</th>
-                <th>Player Position</th>
-                <th>Preferred Foot</th>
+            <tr class="d-table-row">
+                <th class="d-table-cell">Player Name</th>
+                <th class="d-table-cell">Player Position</th>
+                <th class="d-table-cell">Preferred Foot</th>
             </tr>
 
 
             {% for player in players %}
-            <tr>
-                <td>{{player.playerName}}</td>
-                <td>{{player.playerPosition}}</td>
-                <td>{{player.skills.prefferedFoot}}</td>
+            <tr class="d-table-row">
+                <td class="d-table-cell">{{player.playerName}}</td>
+                <td class="d-table-cell">{{player.playerPosition}}</td>
+                <td class="d-table-cell">{{player.skills.prefferedFoot}}</td>
             </tr>
 
 
