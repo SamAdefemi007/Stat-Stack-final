@@ -8,6 +8,10 @@ from django.contrib import messages
 from django.urls import reverse
 
 
+def home(request):
+    return render(request, 'statlist/home.html')
+
+
 def club(request):
     try:
         clubObj = Club.objects.all().values_list(
