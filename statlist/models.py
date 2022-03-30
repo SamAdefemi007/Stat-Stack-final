@@ -48,3 +48,24 @@ class TransferMarket(models.Model):
 
     def __str__(self):
         return f"{self.value, self.wages, self.releaseClause, self.contractExpiry}"
+
+
+class Player(models.Model):
+    class Meta:
+        ordering = ('-skills__rating',)
+
+    playerID = models.AutoField(primary_key=True)
+    playerName = models.CharField(max_length=200)
+    playerAge = models.IntegerField(default=0)
+    playerPhoto = models.URLField(max_length=1000)
+    playerPosition = models.CharField(max_length=3)
+    playerCountry = models.ForeignKey(
+        Country, on_delete=models.SET_NULL, null=True)
+    playerClub = models.ForeignKey(Club, on_delete=models.SET_NULL, null=True)
+    skills = models.OneToOneField(
+        Skills, on_delete=models.SET_NULL, null=True)
+    playerValue = models.OneToOneField(
+        TransferMarket, on_delete=models.SET_NULL, null=True)
+
+    def __str__(self):
+        return f"{self.playerName, self.playerAge, self.playerPosition}"
