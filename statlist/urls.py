@@ -3,6 +3,7 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+app_name = 'statlist'
 urlpatterns = [
     path('', views.home, name="home"),
     path('profile', views.profile, name="profile"),
