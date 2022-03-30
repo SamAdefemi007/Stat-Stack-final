@@ -1,0 +1,1 @@
+web: gunicorn StatStack.wsgi --log-file -

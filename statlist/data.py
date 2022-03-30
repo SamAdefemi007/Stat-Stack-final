@@ -17,6 +17,7 @@ try:
         name = set()
         clubSet = set()
         for row in reader:
+            print(row)
             country_obj = Country.objects.create(
                 countryName=row[4], countryFlag=row[5])
             club_obj = Club.objects.create(
