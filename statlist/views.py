@@ -8,78 +8,24 @@ from django.contrib import messages
 from django.urls import reverse
 
 
-{% extends 'statlist/base.html' %}
-{% load static %}
-
-{% block content %}
-<h4 class="head-c">Please Select the country</h4>
-<form action={% url 'country' %} method="POST">
-    {% csrf_token %}
-    <select name="countrySet" id="countrySet" selected = "selected">
-        {% for country in countries %}
-        <option value="{{country}}">{{country}}</option>
-        {% endfor %}
-    </select>
-    <input type="submit" value="Check Squad">
-</form>
-
-
-{% if players %}
-<div class="show-list">
-    <div>
-        <p class="country-info">{{countryname}} <img src="{{countryflag}}" alt=""></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Player Name</th>
-                    <th>Player Position</th>
-                    <th>Preferred Foot</th>
-                </tr>
-
-            </thead>
-            
-            <tbody>
-                {% for player in players %}
-                <tr>
-                    <td>{{player.playerName}}</td>
-                    <td>{{player.playerPosition}}</td>
-                    <td>{{player.skills.prefferedFoot}}</td>
-                </tr>
-                
-                
-                {% endfor %}
-
-            </tbody>
-                
-        </table>
-    </div>
-    <div class="squad">
-            <div class="formation">
-                
-               <div>
-                <p>GK</p>
-               </div>
-               <div>
-                    <p>RB</p>
-                    <p>CB</p>
-                   <p>CB</p>
-                   <p>LB</p>
-               </div>
-               <div>
-                   <p>RM</p>
-                   <p>CDM</p>
-                   <p>LM</p>
-               </div>
-               <div>
-                   <p>RW</p>
-                   <p>ST</p>
-                   <p>LW</p>
-               </div>
-               
-            </div>
-    </div>
-</div>
-   
-{% endif %}
-
-{% endblock %}
+def country(request):
+    try:
+        countryObj = Country.objects.all().values_list(
+            "countryName", flat=True).distinct()
+    except ObjectDoesNotExist:
+        print("the country object does not exist or could not be fetched from the database")
+    playerobj = {}
+    countryname = None
+    countryflag = None
+    if request.method == "POST":
+        countryname = request.POST["countrySet"]
+        try:
+            countryflag = Country.objects.all().filter(
+                countryName=countryname).first().countryFlag
+        except MultipleObjectsReturned:
+            print(
+                "The query returned more than one object, possible duplication of countryname or wrong queryset")
+        else:
+            playerobj = Player.objects.all().filter(
+                playerCountry__countryName=countryname).order_by("-skills__rating")
+    return render(request, 'statlist/country.html', {'countries': countryObj, 'players': playerobj, 'countryname': countryname, 'countryflag': countryflag})
