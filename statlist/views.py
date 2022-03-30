@@ -33,5 +33,10 @@ def club(request):
 
 
 def compare(request):
-        
+        try:
+            playerObj = Player.objects.all().values_list(
+            "playerName", flat=True).distinct()
+        except ObjectDoesNotExist:
+            print("the club object does not exist or could not be fetched from the database")
+            
         return render(request, 'statlist/compare.html', {'players': playerObj, 'player1': player1object, 'player2': player2object})
