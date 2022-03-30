@@ -38,3 +38,13 @@ class Skills(models.Model):
 
     def __str__(self):
         return f"{self.rating}, {self.prefferedFoot}"
+
+class TransferMarket(models.Model):
+    transferID = models.AutoField(primary_key=True)
+    value = models.CharField(max_length=10, null=True)
+    contractExpiry = models.IntegerField()
+    wages = models.CharField(max_length=10)
+    releaseClause = models.CharField(max_length=10)
+
+    def __str__(self):
+        return f"{self.value, self.wages, self.releaseClause, self.contractExpiry}"
