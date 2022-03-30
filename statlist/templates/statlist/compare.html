@@ -3,6 +3,54 @@
 
 {% block content %}
 
+
+
+{% else %}
+
+<div class="else-default">
+
+    {% if messages %}
+        {% for message in messages%}
+         <p id="message">{{message}}</p>
+        {% endfor %}
+    {% endif %}
+    <div class="main-default">
+        <div class="default-div">
+            <img src="../../static/images/default.png" alt="">
+        
+        </div>
+        <div id="div-2" class="default-div">
+            <img src="../../static/images/default.png" alt="">
+        
+        </div>
+
+    </div>
+    
+    <div>
+        <form action="">
+            <div class="form-div">
+                <select class="compare-select" name="player1" required>
+                    <option value="" disabled selected>Select a Player</option>
+                    {% for player in players %}
+                    <option value="{{player}}">{{player}}</option>
+                    {% endfor %}
+                </select>
+                <select class="compare-select" name="player2" required>
+                    <option value="" disabled selected>Select a Player</option>
+                    {% for player in players %}
+                    <option value="{{player}}">{{player}}</option>
+                    {% endfor %}
+                </select>
+
+            </div>
+            
+            <input class="select-input" type="submit" value="Compare Players">
+        </form>
+    
+    </div>
+</div>
+
+{% endif%}
 {% block footer %}
 {% endblock %}
 {% endblock %}
