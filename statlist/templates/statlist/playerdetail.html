@@ -21,6 +21,12 @@
                     <p><span class="field-name">Dribbling:</span> <span class="field-value">{{player.skills.dribbling}}</span></p>
                     <p><span class="field-name">Defending:</span> <span class="field-value">{{player.skills.defending}}</span></p>
             </div>
+            <div>
+                    <p><span class="field-name">Market Value:</span> <span class="field-value">{{player.playerValue.value}}</span></p>
+                    <p><span class="field-name">Wages:</span> <span class="field-value">{{player.playerValue.wages}}</span></p>
+                    <p><span class="field-name">Release Clause:</span> <span class="field-value">{{player.playerValue.releaseClause}}</span></p>
+                    <p><span class="field-name">Contract Expiry:</span> <span class="field-value">{{player.playerValue.contractExpiry}}</span></p>
+            </div>
         </div>
     </div>
 {% endblock %}
