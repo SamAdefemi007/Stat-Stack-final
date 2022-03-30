@@ -6,3 +6,4 @@ from django.core.paginator import Paginator
 from django.core.exceptions import *
 from django.contrib import messages
 from django.urls import reverse
+
