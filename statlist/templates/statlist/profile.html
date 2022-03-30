@@ -1,0 +1,64 @@
+{% extends 'statlist/base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>FIFA World Best Footballers</h1>
+    <div class="wrapper">
+        
+        {%for player in players %}
+        <a id="player-link" href="profile/{{player.playerID}}/">
+        <div class="player_Card">
+            <div class="Top-card">
+                <img src="{{player.playerPhoto}}" alt="">
+            
+                <div>
+                    <span>{{player.skills.rating}}</span>
+                    <img id="small-logo" src="{{player.playerCountry.countryFlag}}" alt="">
+                    <img id="small-logo2" src="{{player.playerClub.clubLogo}}" alt="">
+                </div>
+
+            </div>
+            
+            <p>{{player.playerName}}</p>
+            <hr>
+            <div class="attribute">
+                <div>
+                    <p>{{player.skills.pace}} PAC</p>
+                    <p>{{player.skills.shooting}} SHO</p>
+                    <p>{{player.skills.passing}} PAS</p>
+                </div>
+                
+                <div>
+                    <p>{{player.skills.dribbling}} DRI</p>
+                    <p>{{player.skills.defending}} DEF</p>
+                    <p>{{player.skills.strength}} PHY</p>
+                </div>
+
+            </div>
+            
+            
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+
+
+    <div class="pagination">
+        <span class="step-links">
+            {% if players.has_previous %}
+            <a href="?page=1"><i class="fas fa-fast-backward"></i>First</a>
+            <a href="?page={{ players.previous_page_number }}"><i class="fas fa-arrow-alt-circle-left"></i>Previous</a>
+            {% endif %}
+    
+            <span class="current">
+                Page {{ players.number }} of {{ players.paginator.num_pages }}.
+            </span>
+    
+            {% if players.has_next %}
+            <a href="?page={{ players.next_page_number }}">Next<i class="fas fa-arrow-circle-right"></i></a>
+            <a href="?page={{ players.paginator.num_pages }}">Last<i class="fas fa-fast-forward"></i></a>
+            {% endif %}
+        </span>
+    </div>
+   
+{% endblock %}
