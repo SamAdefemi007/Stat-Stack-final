@@ -45,7 +45,7 @@ def profile(request):
         paginator = Paginator(playerobj, 15)
         page_num = request.GET.get("page")
         page_obj = paginator.get_page(page_num)
-    return render(request, 'statlist/profile.html', {'players': page_obj})
+    return render(request, 'profile.html', {'players': page_obj})
 
 def compare(request):
     try:
