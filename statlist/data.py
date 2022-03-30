@@ -53,3 +53,10 @@ try:
                 playerValue=transfer_obj
             )
     print("data parsed")
+
+except IOError:
+    logging.exception('')
+except:
+    print("File opened, but the data was not parsed successfully")
+if not reader:
+    raise ValueError("No data available")
