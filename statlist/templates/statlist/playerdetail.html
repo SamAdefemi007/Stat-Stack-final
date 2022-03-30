@@ -4,7 +4,13 @@
     <div class="details">
         <div class="profile-img"><img src="{{player.playerPhoto}}" alt=""></div>
         <div class="details-card">
-
+            <div>
+                    <p><span class="field-name">Name:</span> <span class="field-value">{{player.playerName}}</span></p>
+                    <p><span class="field-name">Age:</span> <span class="field-value">{{player.playerAge}}</span></p>
+                    <p><span class="field-name">Position:</span> <span class="field-value">{{player.playerPosition}}</span></p>
+                    <p><span class="field-name">Nationality:</span><span class="field-value">{{player.playerCountry}} </span><img src="{{player.playerCountry.countryFlag}}" alt=""></p>
+                    <p><span class="field-name">Club:</span><span class="field-value">{{player.playerClub}}</span> <img src="{{player.playerClub.clubLogo}}" alt=""></p>
+            </div>
         </div>
     </div>
 {% endblock %}
