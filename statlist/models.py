@@ -24,3 +24,17 @@ class Club(models.Model):
 
     def __str__(self):
         return f"{self.clubName}"
+
+class Skills(models.Model):
+    skillsID = models.AutoField(primary_key=True)
+    prefferedFoot = models.CharField(max_length=10)
+    pace = models.IntegerField(default=0)
+    shooting = models.IntegerField(default=0)
+    passing = models.IntegerField(default=0)
+    strength = models.IntegerField(default=0)
+    dribbling = models.IntegerField(default=0)
+    defending = models.IntegerField(default=0)
+    rating = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.rating}, {self.prefferedFoot}"
