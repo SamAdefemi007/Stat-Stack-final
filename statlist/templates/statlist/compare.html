@@ -5,6 +5,35 @@
 <div class="top-default">
     <div class="main-default">
         {% if player1 and player2 %}
+        <div id="player1" class="default-div">
+            <img src="{{player1.playerPhoto}}" alt="">
+            <p><span class="field-name">Name:</span> <span class="field-value">{{player1.playerName}}</span></p>
+            <p><span class="field-name">Age:</span> <span class="field-value">{{player1.playerAge}}</span></p>
+            <p><span class="field-name">Position:</span> <span class="field-value">{{player1.playerPosition}}</span></p>
+            <p><span class="field-name">Nationality:</span><span class="field-value">{{player1.playerCountry}} </span><img
+                    src="{{player1.playerCountry.countryFlag}}" alt=""></p>
+            <p><span class="field-name">Club:</span><span class="field-value">{{player1.playerClub}}</span> <img
+                    src="{{player1.playerClub.clubLogo}}" alt=""></p>
+            <p><span class="field-name">Overall Rating:</span> <span class="field-value">{{player1.skills.rating}}</span>
+            </p>
+            <p><span class="field-name">Preffered Foot:</span> <span
+                    class="field-value">{{player1.skills.prefferedFoot}}</span></p>
+            <p><span class="field-name">Pace:</span> <span class="field-value">{{player1.skills.pace}}</span></p>
+            <p><span class="field-name">Shooting:</span><span class="field-value">{{player1.skills.shooting}}</span></p>
+            <p><span class="field-name">Passing:</span> <span class="field-value">{{player1.skills.passing}}</span></p>
+            <p><span class="field-name">Strength:</span> <span class="field-value">{{player1.skills.strength}}</span></p>
+            <p><span class="field-name">Dribbling:</span> <span class="field-value">{{player1.skills.dribbling}}</span></p>
+            <p><span class="field-name">Defending:</span> <span class="field-value">{{player1.skills.defending}}</span></p>
+            <p><span class="field-name">Market Value:</span> <span class="field-value">{{player1.playerValue.value}}</span>
+            </p>
+            <p><span class="field-name">Wages:</span> <span class="field-value">{{player1.playerValue.wages}}</span></p>
+            <p><span class="field-name">Release Clause:</span> <span
+                    class="field-value">{{player1.playerValue.releaseClause}}</span>
+            </p>
+            <p><span class="field-name">Contract Expiry:</span> <span
+                    class="field-value">{{player1.playerValue.contractExpiry}}</span></p>
+    
+        </div>
 
 
 {% else %}
