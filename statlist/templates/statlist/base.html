@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'statlist/styles.css' %}">
+    <script src="https://kit.fontawesome.com/18d37e10d4.js" crossorigin="anonymous"></script>
+    <title>Stats-Stack</title>
+</head>
+<body>
+    {% block navbar %}
+    <nav>
+        <a href="{% url 'home' %}"><img id="logo" src="{% static 'images/statslogo.png' %}" alt=""></a>
+        <ul>
+            <a href="{% url 'profile' %}"><li><i class="fas fa-user"></i>Player Profile</li></a>
+            <a href="{% url 'compare' %}"><li><i class="fas fa-not-equal"></i></i>Compare Players</li></a>
+            <a href="{% url 'country' %}"><li><i class="fas fa-globe"></i>National Team</li></a>
+            <a href="{% url 'club' %}"><li><i class="fas fa-futbol"></i>Football Clubs</li></a>
+        </ul>
+        
+    </nav>
+    {% endblock %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% block footer %}
+        <footer>
+            <div>
+                <p>Stats-Stack &copy;2022 <span>For more information, contact us at customerenquiries@stats-stack.com</span></p>
+            </div>
+        </footer>
+
+    {% endblock %}
+</body>
+</html>
