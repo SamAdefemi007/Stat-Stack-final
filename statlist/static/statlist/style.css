@@ -1,0 +1,448 @@
+body {
+  background: #ffefba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ffefba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: inter, sans-serif;
+  margin: 0;
+}
+nav {
+  display: flex;
+  margin-top: 0;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 15px;
+  border: 1px dotted gray;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+nav ul li:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translate(7px, -4px);
+}
+
+nav ul li a {
+  text-decoration: wavy;
+}
+
+#logo {
+  max-width: 150px;
+  margin-right: 150px;
+  height: 100px;
+  transition: all 1s ease 0.9s;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 200px;
+}
+
+#logo:hover {
+  background-color: #000000;
+  box-shadow: 0px 15px 20px rgba(255, 229, 200, 0.4);
+  transform: translateX(10px);
+}
+
+#img-block {
+  background-image: url("../images/newpitch.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 1000px;
+  width: 50%;
+  margin-left: auto;
+}
+
+.index-content {
+  display: flex;
+  background-image: url("../images/footback.jpeg");
+  background-size: cover;
+  color: white;
+}
+
+.bounce2 {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-50px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-img {
+  max-width: 120px;
+  margin-left: 350px;
+  margin-top: 150px;
+}
+
+.fas {
+  margin-right: 5px;
+  margin-left: 5px;
+  color: burlywood;
+}
+
+.player_Card {
+  background-image: url(https://selimdoyranli.com/cdn/fut-player-card/img/card_bg.png);
+  background-size: 120% 100%;
+  background-repeat: no-repeat;
+  height: 300px;
+  padding: 0 10px 3.8rem 0;
+  width: 250px;
+  color: #e9cc74;
+  margin-bottom: 20px;
+}
+
+.player_Card:hover {
+  color: whitesmoke;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.player_Card img {
+  width: 60%;
+  height: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: 30px;
+}
+
+.player_Card > p {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.attribute {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.attribute > div > p {
+  margin-left: 10px;
+  font-size: medium;
+}
+
+#small-logo,
+#small-logo2 {
+  width: 30px;
+  height: 30px;
+}
+
+.Top-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Top-card div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.Top-card > div > span {
+  font-size: xx-large;
+}
+
+.pagination {
+  margin-top: 50px;
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 80px;
+}
+.current {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.step-links a {
+  border: 2px solid goldenrod;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+form {
+  margin-bottom: 20px;
+}
+
+.squad {
+  background-image: url("../images/squad.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  color: #e9cc74;
+  margin-left: 100px;
+}
+
+.show-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  height: 70%;
+}
+
+.formation > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/bg.jpeg");
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.profile-img {
+  border-bottom: 1px solid salmon;
+  width: 100%;
+}
+.profile-img > img {
+  width: 200px;
+  margin-left: 40%;
+}
+
+.details-card div {
+  margin-right: 100px;
+}
+
+.field-name {
+  font-size: larger;
+  font-family: inter, sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.field-value {
+  color: blue;
+  font-weight: 700;
+}
+
+.country-info {
+  font-size: xx-large;
+  font-weight: 700;
+  color: darkcyan;
+}
+
+.info-text {
+  text-align: center;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.info-text > p {
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+#home-btn button {
+  width: 250px;
+  height: 70px;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  background-color: #e9cc74;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#home-btn button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  transform: translateX(7px);
+}
+
+#player-link {
+  text-decoration: none;
+}
+
+form > select {
+  height: 40px;
+  margin-left: 30px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.head-c {
+  margin-left: 30px;
+}
+
+form > input {
+  border-radius: 10px;
+  padding: 6px;
+  font-size: large;
+}
+
+form > input:hover {
+  background-color: #e9cc74;
+}
+
+thead {
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+tbody {
+  background-color: whitesmoke;
+}
+tbody > tr > td {
+  padding: 5px;
+  font-size: medium;
+}
+th {
+  text-align: left;
+}
+
+footer {
+  background-color: aliceblue;
+  border: 1px solid burlywood;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  font-style: italic;
+}
+
+.main-default {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.default-div {
+  width: 20%;
+  border-radius: 30px;
+}
+
+.default-div > img {
+  max-width: 300px;
+  height: 250px;
+  border-radius: 30px;
+  margin-right: 40px;
+}
+
+.compare-btn > button {
+  font-size: xx-large;
+}
+
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+
+.form-div > select {
+  width: 300px;
+  height: 30px;
+}
+
+.select-input {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+.checkothers {
+  margin: auto;
+}
+.checkothers > a > button {
+  font-size: x-large;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 30px 20px;
+}
+
+.checkothers > a > button:hover {
+  background-color: gold;
+}
+.top-default {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.else-default {
+  display: flex;
+  flex-direction: column;
+}
+
+.compare-select {
+  margin-left: 100px;
+}
+
+#div-2 {
+  margin-left: 220px;
+}
+
+#player2 {
+  margin-left: 70px;
+  border: 2px solid sandybrown;
+  padding-left: 80px;
+}
+
+#player1 {
+  border: 2px solid sandybrown;
+  padding-left: 40px;
+}
+
+#message {
+  background-color: lightcoral;
+  padding: 10px;
+}
