@@ -29,3 +29,4 @@ def country(request):
             playerobj = Player.objects.all().filter(
                 playerCountry__countryName=countryname).order_by("-skills__rating")
     return render(request, 'statlist/country.html', {'countries': countryObj, 'players': playerobj, 'countryname': countryname, 'countryflag': countryflag})
+
