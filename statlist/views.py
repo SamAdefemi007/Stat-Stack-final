@@ -7,3 +7,5 @@ from django.core.exceptions import *
 from django.contrib import messages
 from django.urls import reverse
 
+def home(request):
+    return render(request, 'statlist/home.html')
