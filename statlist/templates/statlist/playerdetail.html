@@ -11,6 +11,16 @@
                     <p><span class="field-name">Nationality:</span><span class="field-value">{{player.playerCountry}} </span><img src="{{player.playerCountry.countryFlag}}" alt=""></p>
                     <p><span class="field-name">Club:</span><span class="field-value">{{player.playerClub}}</span> <img src="{{player.playerClub.clubLogo}}" alt=""></p>
             </div>
+            <div>
+                    <p><span class="field-name">Overall Rating:</span> <span class="field-value">{{player.skills.rating}}</span></p>
+                    <p><span class="field-name">Preffered Foot:</span> <span class="field-value">{{player.skills.prefferedFoot}}</span></p>
+                    <p><span class="field-name">Pace:</span> <span class="field-value">{{player.skills.pace}}</span></p>
+                    <p><span class="field-name">Shooting:</span><span class="field-value">{{player.skills.shooting}}</span></p>
+                    <p><span class="field-name">Passing:</span> <span class="field-value">{{player.skills.passing}}</span></p>
+                    <p><span class="field-name">Strength:</span> <span class="field-value">{{player.skills.strength}}</span></p>
+                    <p><span class="field-name">Dribbling:</span> <span class="field-value">{{player.skills.dribbling}}</span></p>
+                    <p><span class="field-name">Defending:</span> <span class="field-value">{{player.skills.defending}}</span></p>
+            </div>
         </div>
     </div>
 {% endblock %}
