@@ -2,5 +2,14 @@
 {% load static %}
 
 {% block content %}
-
+<h4 class="head-c">Please Select the country</h4>
+<form action={% url 'country' %} method="POST">
+    {% csrf_token %}
+    <select name="countrySet" id="countrySet" selected = "selected">
+        {% for country in countries %}
+        <option value="{{country}}">{{country}}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Check Squad">
+</form>
 {% endblock %}
