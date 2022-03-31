@@ -1,5 +1,5 @@
 from django.test import TestCase, SimpleTestCase,Client
-from statlist.views import home, profile, details, country, club
+from statlist.views import home, profile, details, country, club, compare
 from .models import Country, Club, Skills, TransferMarket, Player
 from django.urls import reverse, resolve
 # Create your tests here.
@@ -22,6 +22,9 @@ class TestUrls(SimpleTestCase):
         url = reverse('country')
         self.assertEqual(resolve(url).func, country)
 
+    def test_compare_url_resolves(self):
+        url = reverse('compare')
+        self.assertEqual(resolve(url).func, compare)
 
 class TestOtherUrls(TestCase):
 
@@ -38,6 +41,7 @@ class TestViews(TestCase):
         self.profile_url = reverse('profile')
         self.club_url = reverse('club')
         self.country_url = reverse('country')
+        self.compare_url = reverse('compare')
 
     def test_profile_GET(self):
         response = self.client.get(self.profile_url)
@@ -56,6 +60,11 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'statlist/country.html')
         self.assertContains(response, "Please Select the country")
+
+    def test_compare_GET(self):
+        response = self.client.get(self.compare_url)
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'statlist/compare.html')
 
 #testing the string representation of the Models
 
