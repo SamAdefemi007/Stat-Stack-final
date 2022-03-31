@@ -1,25 +1,77 @@
-### What is this?
-This `README.md` file is auto-created for all new projects.
+# Stat-Stack
+> This is a web application built in python with Django to assist users find and make analysis of a desired football player .
+---
 
-### Why am I here?
-This file opens automatically when you open a project. 
+### Table of Contents
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [References](#references)
+- [License](#license)
+- [Author Info](#author-info)
 
-If you do not create Guides, this `README.md` will be what automatically opens for students. You can edit this file by clicking on the pencil icon in the upper right corner.
+---
 
-### How do I get started with Codio?
-Use this [Onboarding Guide](https://codio.com/home/starter-packs/2ae8501b-e5f7-4b07-8e9f-adb155fc6d10) for an interactive tutorial through the main features of Codio. Click on the link, click **Use Pack** and then click **Create** to add it to your projects.
+## Description
 
-### How do I close this file?
-At the top of your workspace you will see tabs for each open file. Click the x on the right hand side of the tab that says **README.md**.
-![readMeTab](https://global.codio.com/platform/readme.resources/readMeTab.png)
+This application is built to help scouts, teams and fans to view and make analysis of football players. Stat-Stack is a solution for your player assessment decisions and recruitment based on up to date data and easy to use website.  
 
-### I expected to see or edit learning materials.
-Select **Tools->Guide->Play** to view the Guide for this project.
-![playGuide](https://global.codio.com/platform/readme.resources/playGuide.png)
+#### Technologies
 
-Click on the **Open Guides Editor** icon to edit the Guide.
-![guideEdit](https://global.codio.com/platform/readme.resources/guideEdit.png)
+- [Python](https://docs.python.org/3/)
+- [Django](https://docs.djangoproject.com/en/4.0/)
+- [HTML](https://html.com/document/)
+- [CSS](https://docs.python.org/3/)
+- [Bootstrap](https://getbootstrap.com)
 
-### How do I delete this file?
-To delete this `README.md` file, right-click (ctrl-click on a Mac) on the file name in the file list.
-![fileTree](https://global.codio.com/platform/readme.resources/fileTree.png)
+[Back To The Top](#read-me-template)
+
+---
+
+## How To Use
+This application is built to help scouts, teams and fans to view and make analysis of football players. Stat-Stack is a solution for your player assessment decisions and recruitment based on up to date data and easy to use website.  
+
+#### Installation
+1. Clone the repository
+```git
+    git clone https://github.com/SamAdefemi007/Stat-Stack-final.git
+```
+2. Activate virtual environment 
+```python
+    source venv/bin/activate
+```
+3. Run the server
+```python
+    python manage.py runserver
+```
+
+
+
+
+
+[Back To The Top](#read-me-template)
+
+---
+
+## References
+Credits go to 
+
+- Abhijith, C., 2022. FIFA22 OFFICIAL DATASET. [online] Kaggle.com. Available at: <https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database> [Accessed 31 March 2022].
+
+[Back To The Top](#read-me-template)
+
+---
+
+## License
+
+The Unlicense
+
+[Back To The Top](#read-me-template)
+
+---
+
+## Contributors
+-Abiodun Olaniyan Samuel
+-Frederick  Lutterdot Henry
+-Laryea Isaac
+
+[Back To The Top](#Stat-Stack)
