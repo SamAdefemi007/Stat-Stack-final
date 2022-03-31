@@ -1,4 +1,6 @@
 # Stat-Stack
+![Project Image](/img/statslogo.png)
+
 > This is a web application built in python with Django to assist users find and make analysis of a desired football player .
 ---
 
@@ -28,10 +30,13 @@ This application is built to help scouts, teams and fans to view and make analys
 ---
 
 ## How To Use
-This application is built to help scouts, teams and fans to view and make analysis of football players. Stat-Stack is a solution for your player assessment decisions and recruitment based on up to date data and easy to use website. 
-below is a preview of players being compared
+This application is built to help scouts, teams and fans to view and make analysis of football players. A user can compare players strengths 
 
-![ ](img/analysis.png)
+
+
+Below is a preview of players being compared
+
+![Sample App Image](/img/analysis.png)
 
 #### Installation
 1. Clone the repository
@@ -46,7 +51,16 @@ below is a preview of players being compared
 ```python
     python manage.py runserver
 ```
-
+4. Point your browser to your local host
+sample below
+```python
+    http://127.0.0.1:8000/
+```
+## Heroku
+Stat-Stack can be accessed remotely on Heroku at 
+```python
+   https://stat-stack.herokuapp.com/
+```
 
 
 
