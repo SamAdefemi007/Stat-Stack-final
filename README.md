@@ -28,7 +28,10 @@ This application is built to help scouts, teams and fans to view and make analys
 ---
 
 ## How To Use
-This application is built to help scouts, teams and fans to view and make analysis of football players. Stat-Stack is a solution for your player assessment decisions and recruitment based on up to date data and easy to use website.  
+This application is built to help scouts, teams and fans to view and make analysis of football players. Stat-Stack is a solution for your player assessment decisions and recruitment based on up to date data and easy to use website. 
+below is a preview of players being compared
+
+![ ](img/analysis.png)
 
 #### Installation
 1. Clone the repository
