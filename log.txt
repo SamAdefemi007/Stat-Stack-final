@@ -1,0 +1,169 @@
+* 56ba2b7 : refactoring
+* 431751b : ready for heroku push
+* d316965 : added favicon
+* b45781d : wrongly deleted templates Revert "favicon addition"
+* db862fb : favicon addition
+*   0f0c810 : Merge pull request #25 from SamAdefemi007/readme
+|\  
+| * adca944 : modified readme needs touches
+| * f2807c0 : added shot samples to readme
+| * 4fa74d4 : readme
+* |   4d84fa7 : Merge pull request #24 from SamAdefemi007/testing
+|\ \  
+| * | d3e1f19 : semi-final testing
+| * | 8cb068e : more testing
+|/ /  
+* | b3d00f7 : responsive design and bootstrap
+* | 0e9ee5e : relaunched heroku
+* | 745be9a : heroku deployment
+* | 9df240b : heroku deployment
+* | fb54301 : heroku deployment
+* | c33c9de : heroku deployment
+* | d4a750d : final
+* | 43e6343 : heroku deployment
+* | 175216b : heroku deployment
+* | b540ca4 : heroku deployment
+* | 9f28f2a : heroku deployment
+* | 768a92f : heroku deployment
+* | 852cdac : heroku deployment
+* | 7147113 : heroku deployment
+* | c1c06b2 : heroku deployment
+* |   1556e23 : Merge pull request #23 from SamAdefemi007/data
+|\ \  
+| * | 788184e : added data.csv
+|/ /  
+* | a0b4cb1 : migrations
+|/  
+*   6755307 : Merge pull request #22 from SamAdefemi007/country
+|\  
+| * 9c7d7a8 : final page design
+| * d2f7fe0 : form and header tags
+| * 1d874eb : country page design
+|/  
+*   47b36f3 : Merge pull request #21 from SamAdefemi007/tests
+|\  
+| * ea182c0 : final tests
+| * 9b48fe2 : testing urls
+| * 3a25acb : simple tests
+* |   38b4db2 : Merge pull request #20 from SamAdefemi007/styles
+|\ \  
+| * | 821d604 : final page design
+| * | 42d8147 : added styles for pagination
+| * | 571fef5 : added styles for the player card
+| * | 60ef57d : added styles for the index page
+| * | e12bb07 : added styles for the base templates-headers and footers
+|/ /  
+* | eb4a282 : registered the models for view on admin
+|/  
+*   9f7d637 : Merge pull request #18 from SamAdefemi007/parsedata
+|\  
+| * 9968db1 : final corrections
+| * b50f15e : parsed the data and implemented error handling
+| * 7990d4a : code for dropping the tables if they exists
+| * e986ebe : added the data.py for parsing the open data
+* |   a309ed8 : Merge pull request #17 from SamAdefemi007/models
+|\ \  
+| * | 335087e : created player tables
+| * | b03ec36 : created transfermarket tables
+| * | e489f63 : created skills table
+| * | 95c9136 : created club table
+| * | 7dd047e : created table for country
+* | |   8143fd5 : Merge pull request #16 from SamAdefemi007/countryviews
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 8593474 : created function for country page
+|/ /  
+* |   7e3f0c9 : Merge pull request #14 from SamAdefemi007/views_home
+|\ \  
+| * \   f94902e : Merge branch 'master' into views_home
+| |\ \  
+| |/ /  
+|/| |   
+* | |   9f2a56d : Merge pull request #13 from SamAdefemi007/profile
+|\ \ \  
+| * | | d0b673b : added pagination
+| * | | 9a876da : created player profiles
+* | | |   1d0d3f3 : Merge pull request #11 from SamAdefemi007/views_profile
+|\ \ \ \  
+| * \ \ \   383cbd4 : Merge branch 'master' into views_profile
+| |\ \ \ \  
+| |/ / / /  
+|/| | | /   
+| | |_|/    
+| |/| |     
+* | | |   57bfd75 : Merge pull request #9 from SamAdefemi007/viewcompare
+|\ \ \ \  
+| * | | | 49d9498 : final details view
+| * | | | 450dba2 : render templates for details views
+| * | | | 8da965a : final views for compare
+| * | | | acd5843 : final views for compare page
+| * | | | f882ecd : data fetching from database
+| * | | | da86888 : basic render template for page
+| * | | |   67a545b : Updated code Merge branch 'master' of github.com:SamAdefemi007/Stat-Stack-final
+| |\ \ \ \  
+| | | |/ /  
+| | |/| |   
+* | | | |   71c06d7 : Merge pull request #8 from SamAdefemi007/compare
+|\ \ \ \ \  
+| |/ / / /  
+| | / / /   
+| |/ / /    
+|/| | |     
+| * | | 1312330 : final page design and template
+| * | | 12b5754 : added player 2 designs and templates
+| * | | e37949e : added first page design and more templates
+| * | | 3aa516d : more templates
+| * | | 2a223b1 : created templates for the default page
+| * | | 122a377 : created templates for the compare page
+| | * | 7c2542c : added profile functions to views
+| |/ /  
+|/| |   
+* | |   194c7bf : Merge pull request #7 from SamAdefemi007/club
+|\ \ \  
+| * | | 4134f51 : club html page created
+* | | |   3ab3c77 : Merge pull request #6 from SamAdefemi007/club
+|\ \ \ \  
+| * \ \ \   76dcdc9 : Merge branch 'master' into club
+| |\ \ \ \  
+| |/ / / /  
+|/| / / /   
+| |/ / /    
+* | | |   ff521f2 : Merge pull request #5 from SamAdefemi007/playerdetail
+|\ \ \ \  
+| | |/ /  
+| |/| |   
+| * | | 75f21c2 : final player details page design and modification
+| * | | ccce6a4 : added transfer market information for the player detail page
+| * | | e24c136 : added player skills for player detail page
+| * | | 3ac10cd : added top-nav template for playerdettail
+| * | | a2f2aa1 : added some page template for playerdetail page
+| * | | f558465 : created template for the playerdetail page
+* | | |   4d39fbf : Merge pull request #4 from SamAdefemi007/home
+|\ \ \ \  
+| |/ / /  
+|/| | |   
+| | * | 9c03d33 : created function for club page
+| |/ /  
+|/| |   
+| | * c441c50 : created function for homepage
+| |/  
+| * 4b81c88 : created homepage
+| * b314635 : added images to static
+|/  
+* d35f06b : imported files for app views
+*   c1c49bc : Merge pull request #3 from SamAdefemi007/base
+|\  
+| * 0e5a1d9 : added html code in base template
+* |   4be4ade : Merge pull request #2 from SamAdefemi007/static
+|\ \  
+| * | 8c70ac6 : created static
+* | |   382f605 : Merge pull request #1 from SamAdefemi007/base
+|\ \ \  
+| |/ /  
+|/| /   
+| |/    
+| * 77ded60 : created base template for html files
+* | 6c03254 : created the urls for the application and linked it to the project's url
+|/  
+* f235f1f : project template
